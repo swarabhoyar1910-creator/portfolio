@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Swara Bhoyar Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+overflow: hidden;
+}
+
+/* NAVBAR */
+
+nav{
+padding:25px 80px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav button{
+background:none;
+border: none;
+margin-right:20px;
+font-size:14px;
+font-weight:bold;
+color:#1378bb;
+cursor: pointer;
+}
+
+nav button:hover{
+color:black;
+}
+
+/* PAGE SECTIONS */
+
+.page{
+display:none;
+padding:60px 40px;
+max-width: 1000px;
+margin:auto;
+word-wrap: break-word;
+}
+
+.active{
+display:block;
+}
+
+/* HERO */
+
+.hero h1{
+font-size:38px;
+margin-bottom:5px;
+}
+
+.hero p{
+color:#151414;
+}
+
+/* WORK CARDS */
+
+.work-grid{
+display:flex;
+gap:40px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+flex:1;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+<script>
+
+function showPage(pageId){
+
+let pages=document.querySelectorAll(".page");
+
+pages.forEach(function(p){
+p.classList.remove("active");
+});
+
+document.getElementById(pageId).classList.add("active");
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<button onclick="showPage('home')">HOME</button>
+<button onclick="showPage('about')">ABOUT</button>
+<button onclick="showPage('career')">CAREER OBJECTIVE</button>
+<button onclick="showPage('projects')">PROJECT</button>
+<button onclick="showPage('skills')">SKILLS & ATTRIBUTES</button>
+<button onclick="showPage('education')">EDUCATION</button>
+<button onclick="showPage('resume')">RESUME</button>
+<button onclick="showPage('contact')">CONTACT</button>
+
+</nav>
+
+<!-- HOME -->
+
+<div id="home" class="page active hero"
+style="background-image: url('home_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height: 100vh;
+width: 100%;">
+
+<h1>Swara Bhoyar</h1>
+<p>Computer Engineer</p>
+<p>Motivated engineering fresher passionate about technology and problem solving.</p>
+
+</div>
+
+<!-- ABOUT -->
+
+<div id="about" class="page"
+style="background-image: url('home_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:100vh; width:100%;">
+
+<h2>About</h2>
+
+<p>
+I am a first year Computer Engineering student at MIT Academy of Engineering with a strong interest in technology and problem solving. I enjoy learning how software and computer systems work and applying my knowledge to build simple and useful projects.
+</p>
+<p>
+During my academic journey, I have developed a basic foundation in programming and web technologies such as C programming and HTML. I like exploring new technologies and improving my technical skills through practice and hands-on projects.
+</p>
+<p>
+I am a motivated and hardworking individual who believes in continuous learning and self improvement. I enjoy working in teams, solving logical problems, and participating in technical activities that help me grow both personally and professionally.
+</p>
+<p>
+My goal is to gain practical experience in the field of software development and data related technologies while contributing my skills and dedication to meaningful technological solutions.
+</p>
+
+</div>
+
+<!-- CAREER OBJECTIVE -->
+
+<div id="career" class="page"
+style="background-image: url('home_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:77vh; width: 100%;">
+
+<h2>Career Objective</h2>
+
+<p>
+As a first year Computer Engineering student, my objective is to build a strong foundation in programming, problem solving, and emerging technologies. I aim to continuously learn new technical skills, work on practical projects, and gain hands on experience during my engineering journey.
+
+In the future, I aspire to become a skilled computer engineer who can contribute to developing useful and innovative technological solutions while continuously improving my knowledge and abilities.
+</p>
+
+</div>
+
+<!-- PROJECTS -->
+
+<div id="projects" class="page"
+style="background-image: url('home_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:77vh; width: 100%;">
+
+<h2>Projects / Assignments</h2>
+
+<div class="work-grid">
+
+<div class="card">
+<h3>Calculator Using C Programming</h3>
+<p>
+Developed a calculator using C program performing multiple mathematical operations.
+</p>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio Website</h3>
+<p>
+Created a personal portfolio website using HTML to showcase projects and skills.
+</p>
+</div>
+
+<div class="card">
+<h3>Mini Project of Resort Management </h3>
+<p>
+Developed a mini project on resort Management using linux commands and basic scripting. the project helps to manage resort information and data which is difficult to handle by humaly methods. 
+</p>
+</div>
+
+<div class="card">
+<h3>Water Level Indicator Model</h3>
+<p>
+Designed a water level indicator model using logic gates to detect water level in a tank and prevent overflow.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- SKILLS -->
+
+<div id="skills" class="page"
+style="background-image: url('skill_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:77vh; width: 100%;">
+
+<h2>Skills and Attributes</h2>
+
+<h3>Technical Skills</h3>
+
+<ul>
+<li>C Programming</li>
+<li>Linux (Basic)</li>
+<li>HTML</li>
+<li>MS Excel</li>
+<li>PowerPoint</li>
+<li>Canva</li>
+</ul>
+
+<h3>Personal Attributes</h3>
+
+<ul>
+<li>Problem Solving</li>
+<li>Teamwork</li>
+<li>Time Management</li>
+<li>Creative Thinking</li>
+<li>Event Management</li>
+</ul>
+
+</div>
+
+<!-- EDUCATION -->
+
+<div id="education" class="page"
+style="background-image: url('edu_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:73vh; width:100%;">
+
+<h2>Education</h2>
+
+<p><b>MIT Academy of Engineering</b><br>
+B.Tech in Computer Engineering<br>
+MHT CET Percentile : 96.42<br>
+2025 – 2029</p>
+
+<p><b>Nirala Jr College</b><br>
+XII (Science - PCM with CS)<br>
+Percentage : 78.83<br>
+2024 – 2025</p>
+
+<p><b>S.P.M English Medium School</b><br>
+X Percentage : 93.68<br>
+2022 – 2023</p>
+
+</div>
+
+<!-- RESUME -->
+
+<div id="resume" class="page"
+style="background-image: url('pr_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:77vh; width: 100%;">
+
+<h2>Resume</h2>
+
+<p>You can download my resume below.</p>
+
+<a href="resume.jpeg" download>
+<button>Download Resume</button>
+</a>
+
+</div>
+
+<!-- CONTACT -->
+
+<div id="contact" class="page"
+style="background-image: url('contact_bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:77vh; width: 100%;">
+
+<h2>Contact</h2>
+
+<p>Phone : +91 7420830379</p>
+<p>Email : swarabhoyar1910@gmail.com</p>
+<p>Location : Yavatmal, Maharashtra</p>
+
+</div>
+
+</body>
+</html>
